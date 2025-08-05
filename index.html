@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>مختبرات التضامن الدولية - الرئيسية</title>
+  <meta content="مختبرات التضامن الدولية - دقة في التشخيص، سرعة في الأداء. خدمات طبية تشخيصية عالية الجودة" name="description">
+  <meta content="مختبرات طبية، تحاليل طبية، فحوصات، تشخيص طبي، مختبر التضامن" name="keywords">
+
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Enhanced Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&family=Almarai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Enhanced Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- Additional Enhanced Styles -->
+  <style>
+    /* Advertisements Section Styles */
+.ads {
+  padding: 80px 0;
+  background-color: var(--color-light);
+}
+
+.video-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-caption {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-caption h4 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.video-caption p {
+  color: var(--color-gray-600);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ads {
+    padding: 60px 0;
+  }
+  
+  .video-card {
+    margin-bottom: 30px;
+  }
+}
+    /* Enhanced Hero Animations */
+    .hero-content {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-image {
+      animation: fadeInRight 1s ease-out 0.3s both;
+    }
+
+    /* Enhanced Service Cards */
+    .service-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-xl);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-gray-100);
+      transition: var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(44, 90, 160, 0.05), transparent);
+      transition: var(--transition-slow);
+    }
+    .z{
+
+color :#fff;
+}
+    .service-card:hover::before {
+      left: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--color-primary-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--spacing-lg);
+      color: var(--color-white);
+      font-size: 2rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Enhanced News Cards */
+    .news-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      border: 1px solid var(--color-gray-100);
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: var(--transition-normal);
+    }
+
+    .news-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .news-card-content {
+      padding: var(--spacing-lg);
+    }
+
+    /* Enhanced Team Cards */
+    .team-card {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      text-align: center;
+      border: 1px solid var(--color-gray-100);
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .team-card-content {
+      padding: var(--spacing-lg);
+    }
+
+    /* Enhanced Gallery */
+    .gallery-item {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      position: relative;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(44, 90, 160, 0.8), rgba(74, 123, 200, 0.8));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: var(--transition-normal);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-overlay span {
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: 1.125rem;
+      text-align: center;
+    }
+
+    /* Enhanced Contact Form */
+    .contact-form {
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-2xl);
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--color-gray-100);
+    }
+
+    /* Enhanced Footer */
+    .footer {
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+      color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="footerPattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23footerPattern)"/></svg>');
+      pointer-events: none;
+    }
+   /* Loading Animation */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid var(--color-gray-200);
+      border-top: 4px solid var(--color-primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Scroll Progress Bar */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: var(--color-primary-gradient);
+      z-index: 9998;
+      transition: width 0.1s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ======= Enhanced Responsive Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="logoo.png" alt="مختبرات التضامن الدولية">
+        <h1>مختبرات التضامن <span>الدولية</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+          <button class="mobile-nav-toggle mobile-nav-hide " type="button">
+              <i class="bi bi-x"></i>
+            </button>
+        <ul>
+
+          <li><a href="#hero" class="active">الرئيسية</a></li>
+          <li><a href="#about">عن المختبر</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#news">الأخبار</a></li>
+          <li><a href="#team">الكادر المخبري</a></li>
+          <li><a href="#gallery">أنواع الفحوصات</a></li>
+          <li class="dropdown chevron-down ">
+            <a href="#" class="chevron-down"><span class="chevron-down">المزيد</span> <i class="bi bi-chevron-down chevron-down"></i></a>
+            <ul>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#services">خدماتنا</a></li>
+              <li><a href="#contact">اتصل بنا</a></li>
+              <li><a href="news.html">الأخبار</a></li>
+            </ul>
+          </li>
+          <div class="chevron-down2">
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#services">خدماتنا</a></li>
+              <li><a href="#contact">اتصل بنا</a></li>
+              <li><a href="news.html">الأخبار</a></li>
+          </div>
+          <li><a href="#contact">التواصل</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary" href="news.html">فروعنا</a>
+      <button class="mobile-nav-toggle mobile-nav-show" type="button">
+        <i class="bi bi-list"></i>
+      </button>
+     
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content">
+          <h2 data-aos="fade-up">
+            مختبرات التضامن الدولية<br>
+            <span>دقة في التشخيص، سرعة في الأداء</span>
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            نقدم خدمات طبية تشخيصية عالية الجودة بأحدث التقنيات والمعدات المتطورة، 
+            مع فريق من الخبراء المتخصصين لضمان دقة النتائج وسرعة الخدمة.
+          </p>
+          <div class="d-flex gap-3" data-aos="fade-up" data-aos-delay="200">
+            <a href="#services" class="btn btn-primary">
+              <i class="bi bi-arrow-down-circle me-2"></i>
+              اكتشف خدماتنا
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="bi bi-telephone me-2"></i>
+              اتصل بنا
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-image">
+          <img src="1P1A9644.jpg" class="img-fluid rounded-soft shadow-soft" alt="مختبرات التضامن الدولية" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ======= Advertisements Section ======= -->
+<section id="ads" class="ads">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h2>إعلاناتنا</h2>
+        <p>أحدث <span>الفيديوهات التعريفية</span></p>
+      </div>
+  
+      <div class="row gy-4 justify-content-center">
+        <!-- Video 1 -->
+        <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-card">
+            <div class="video-wrapper ratio ratio-16x9">
+              <iframe src="2.mp4" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+              <h4>فيديو تعريفي عن المختبر</h4>
+              <p>تعرف على خدمات مختبرات التضامن الدولية وأحدث الأجهزة</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Video 2 -->
+        <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-card">
+            <div class="video-wrapper ratio ratio-16x9">
+              <iframe src="1.mp4" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+              <h4>جولة داخل المختبر</h4>
+              <p>جولة مصورة داخل أقسام المختبر المختلفة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>عن المختبر</h2>
+          <p>مختبرات طبية تخصصية هدفها تقديم خدمة طبية محلية <span>راقية</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 about-img" style="background-image: url(b.jpg);" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>الفرع الرئيسي - تعز</h4>
+              <p><i class="bi bi-geo-alt me-2"></i>شارع التحرير</p>
+              <p><i class="bi bi-telephone me-2"></i>+967 4 123456</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="content">
+              <h3 class="text-gradient">أهدافنا ورؤيتنا</h3>
+              <p class="fst-italic">
+                نسعى لتقديم خدمات طبية تشخيصية متميزة تواكب أحدث التطورات العالمية في مجال الطب التشخيصي.
+              </p>
+              
+              <!-- أهدافنا الرئيسية -->
+              <div class="goals-section mb-4">
+                <h5 class="mb-3"><i class="bi bi-bullseye text-primary me-2"></i>أهدافنا الرئيسية</h5>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="goal-item mb-3">
+                      <div class="goal-icon">
+                        <i class="bi bi-people-fill"></i>
+                      </div>
+                      <div class="goal-content">
+                        <h6>الاهتمام بالعميل</h6>
+                        <p>تلبية متطلبات العملاء حاضراً ومستقبلاً</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="goal-item mb-3">
+                      <div class="goal-icon">
+                        <i class="bi bi-gear-fill"></i>
+                      </div>
+                      <div class="goal-content">
+                        <h6>التقنيات المتطورة</h6>
+                        <p>استخدام أجهزة ومعدات طبية متطورة</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="goal-item mb-3">
+                      <div class="goal-icon">
+                        <i class="bi bi-target"></i>
+                      </div>
+                      <div class="goal-content">
+                        <h6>تحقيق الرؤية</h6>
+                        <p>تحقيق الأهداف التي تتوافق مع رؤية المختبرات</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- رؤيتنا المستقبلية -->
+              <div class="vision-section">
+                <h5 class="mb-3"><i class="bi bi-eye text-primary me-2"></i>رؤيتنا المستقبلية</h5>
+                <div class="vision-cards">
+                  <div class="vision-card">
+                    <i class="bi bi-heart-pulse"></i>
+                    <span>المساهمة المجتمعية بتقديم خدمات طبية إنسانية</span>
+                  </div>
+                  <div class="vision-card">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <span>تحسين العلاقة مع كافة الأطراف المهتمة</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- رسالتنا -->
+              <div class="mission-section mt-4">
+                <div class="mission-text">
+                  <i class="bi bi-chat-quote text-primary"></i>
+                  <p class="mb-0">
+                    نهتم بجميع العاملين لدينا ونسعى للارتقاء بخبراتهم وقدراتهم من أجل زيادة الوعي 
+                    للوفاء بمتطلبات العملاء والتفوق على توقعاتهم.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>خدماتنا</h2>
+          <p>نقدم مجموعة شاملة من <span>الخدمات الطبية</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h4>فحوصات قبل الزواج</h4>
+              <p>فحوصات شاملة تشمل أمراض الدم الوراثية والأمراض المعدية لضمان صحة الأجيال القادمة.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check text-primary me-2"></i>فحص الدم العام CBC</li>
+                <li><i class="bi bi-check text-primary me-2"></i>فحص الترحيل الكهربائي</li>
+                <li><i class="bi bi-check text-primary me-2"></i>فحص إنزيم الفول G6PD</li>
+                <li><i class="bi bi-check text-primary me-2"></i>فصيلة الدم</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>الأمراض المعدية</h4>
+              <p>فحوصات متخصصة للكشف عن الأمراض المعدية والفيروسات بأحدث التقنيات.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check text-primary me-2"></i>فيروسات الكبد B & C</li>
+                <li><i class="bi bi-check text-primary me-2"></i>فيروس الإيدز HIV</li>
+                <li><i class="bi bi-check text-primary me-2"></i>مرض الزهري SYPHILIS</li>
+                <li><i class="bi bi-check text-primary me-2"></i>فحوصات COVID-19</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-dna"></i>
+              </div>
+              <h4>الأمراض الوراثية</h4>
+              <p>استشارات وفحوصات متخصصة للأمراض الوراثية والجينية بالتعاون مع أطباء متخصصين.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check text-primary me-2"></i>ضمور الدماغ</li>
+                <li><i class="bi bi-check text-primary me-2"></i>الأمراض الجينية</li>
+                <li><i class="bi bi-check text-primary me-2"></i>استشارات وراثية</li>
+                <li><i class="bi bi-check text-primary me-2"></i>تحليل التاريخ المرضي</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center">
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter">13</span>
+              <p>سنة خبرة</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center">
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter">3</span>
+              <p>فروع</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center">
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter">30</span>
+              <p>مخبري مؤهل</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter">24</span>
+              <p>ساعة دوام</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= News Section ======= -->
+    <section id="news" class="news section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>الأخبار</h2>
+          <p>آخر <span>الأخبار والفعاليات</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="news-card">
+              <img src="6.jpg" alt="خبر 1">
+              <div class="news-card-content">
+                <h4>مشاركة في المؤتمر العلمي الخامس</h4>
+                <p class="news-excerpt">بحضور الدكتور ابن حبتور اختتام المؤتمر العلمي الخامس لجراحة المخ والأعصاب بمشاركة مختبر التضامن الدولية</p>
+                <div class="news-full-content" style="display: none;">
+                  <p>شارك مختبر التضامن الدولية في المؤتمر العلمي الخامس لجراحة المخ والأعصاب الذي أقيم في العاصمة صنعاء بحضور نخبة من الأطباء والمختصين من مختلف أنحاء اليمن والعالم العربي.</p>
+                  <p>وقد تم خلال المؤتمر عرض أحدث التطورات في مجال التشخيص المخبري للأمراض العصبية، كما تم تقديم ورقة علمية حول دور المختبرات الطبية في دعم جراحات المخ والأعصاب.</p>
+                  <p>وأشاد الدكتور ابن حبتور بالجهود المبذولة من قبل مختبر التضامن الدولية في تطوير الخدمات التشخيصية وتقديم نتائج دقيقة تساعد الأطباء في اتخاذ القرارات العلاجية المناسبة.</p>
+                </div>
+                <button class="btn btn-primary btn-sm read-more-btn" onclick="toggleReadMore(this)">قراءة المزيد</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="news-card">
+              <img src="https://th.bing.com/th/id/OIP.oY1RiuGtwN35SdnW2GTPxAHaFj?w=253&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="خبر 2">
+              <div class="news-card-content">
+                <h4>افتتاح فرع جديد</h4>
+                <p class="news-excerpt">افتتاح فرع جديد في منطقة النشمة لخدمة المزيد من المرضى وتوفير خدمات طبية متميزة</p>
+                <div class="news-full-content" style="display: none;">
+                  <p>تم افتتاح فرع جديد لمختبرات التضامن الدولية في منطقة النشمة بمحافظة تعز، وذلك في إطار خطة التوسع لتقديم خدمات طبية متميزة لأكبر عدد من المرضى.</p>
+                  <p>يضم الفرع الجديد أحدث الأجهزة والمعدات الطبية المتطورة، ويقدم جميع أنواع التحاليل والفحوصات الطبية بنفس معايير الجودة العالية المعتمدة في الفرع الرئيسي.</p>
+                  <p>ويعمل في الفرع الجديد فريق من الفنيين المؤهلين والمدربين على أعلى مستوى لضمان دقة النتائج وسرعة الخدمة، مع توفير خدمة الطوارئ على مدار 24 ساعة.</p>
+                </div>
+                <button class="btn btn-primary btn-sm read-more-btn" onclick="toggleReadMore(this)">قراءة المزيد</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="news-card">
+              <img src="https://th.bing.com/th/id/OIP.3NW1Cw7TxabfMNeFAzGHXQHaE4?w=307&h=202&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="خبر 3">
+              <div class="news-card-content">
+                <h4>تطوير الخدمات</h4>
+                <p class="news-excerpt">إضافة أحدث الأجهزة والتقنيات لتحسين جودة الخدمات المقدمة وزيادة دقة النتائج</p>
+                <div class="news-full-content" style="display: none;">
+                  <p>في إطار سعي مختبرات التضامن الدولية المستمر لتطوير خدماتها، تم إضافة مجموعة من أحدث الأجهزة والتقنيات المتطورة في مجال التشخيص المخبري.</p>
+                  <p>تشمل الأجهزة الجديدة أجهزة تحليل الدم الآلية عالية السرعة، وأجهزة الكيمياء الحيوية المتطورة، بالإضافة إلى أجهزة المناعة والهرمونات الحديثة.</p>
+                  <p>هذه التطويرات ستساهم في تقليل أوقات انتظار النتائج وزيادة دقتها، مما يعزز من جودة الخدمة المقدمة للمرضى ويساعد الأطباء في التشخيص السريع والدقيق.</p>
+                </div>
+                <button class="btn btn-primary btn-sm read-more-btn" onclick="toggleReadMore(this)">قراءة المزيد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>الكادر المخبري</h2>
+          <p>فريق من <span>الخبراء المتخصصين</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-card">
+              <img src="ah.jpg" alt="أحمد القدسي">
+              <div class="team-card-content">
+                <h4>أحمد القدسي</h4>
+                <span class="text-primary">ماجستير مختبرات طبية</span>
+                <p>إدارة المختبر والإشراف العام على جميع الأقسام</p>
+                <div class="social-links">
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-card">
+              <img src="mm.png" alt="فارس عبدالجليل">
+              <div class="team-card-content">
+                <h4>فارس عبدالجليل</h4>
+                <span class="text-primary">ماجستير كيمياء حيوية</span>
+                <p>خبير في قسم الكيمياء والتحاليل المتخصصة</p>
+                <div class="social-links">
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-card">
+              <img src="cc.png" alt="رعد عبد الجليل">
+              <div class="team-card-content">
+                <h4>رعد عبد الجليل</h4>
+                <span class="text-primary">بكالوريوس مختبرات</span>
+                <p>متخصص في قسم أمراض الدم والهيماتولوجي</p>
+                <div class="social-links">
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-sm btn-secondary"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>أنواع الفحوصات</h2>
+          <p>مجموعة شاملة من <span>الفحوصات الطبية</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-item">
+              <img src="fiqr.jpg" alt="فقر الدم">
+              <div class="gallery-overlay">
+                <span>فقر الدم</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-item">
+              <img src="suqer.jpg" alt="داء السكري">
+              <div class="gallery-overlay">
+                <span>داء السكري</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery-item">
+              <img src="kila.jpg" alt="وظائف الكلى">
+              <div class="gallery-overlay">
+                <span>وظائف الكلى</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="gallery-item">
+              <img src="kabid.jpg" alt="وظائف الكبد">
+              <div class="gallery-overlay">
+                <span>وظائف الكبد</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="gallery-item">
+              <img src="qalb.jpg" alt="فحوصات القلب">
+              <div class="gallery-overlay">
+                <span>فحوصات القلب</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="gallery-item">
+              <img src="fitamin.jpg" alt="الفيتامينات">
+              <div class="gallery-overlay">
+                <span>الفيتامينات</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="gallery-item">
+              <img src="dohon.jpg" alt="الدهون">
+              <div class="gallery-overlay">
+                <span>الدهون</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="gallery-item">
+              <img src="manai.jpg" alt="الجهاز المناعي">
+              <div class="gallery-overlay">
+                <span>الجهاز المناعي</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>التواصل</h2>
+          <p>تحتاج مساعدة؟ <span>تواصل معنا</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <h3 class="mb-4">أرسل رسالة</h3>
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" placeholder="الاسم" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" placeholder="الموضوع" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="الرسالة" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item d-flex align-items-center">
+                  <i class="icon bi bi-map flex-shrink-0"></i>
+                  <div>
+                    <h3>العنوان</h3>
+                    <p>شارع جمال مع تقاطع شارع التحرير</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex align-items-center">
+                  <i class="icon bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@tadamun-labs.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex align-items-center">
+                  <i class="icon bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3 >الهاتف</h3>
+                    <p>+967 4 123456</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex align-items-center">
+                  <i class="icon bi bi-clock flex-shrink-0"></i>
+                  <div>
+                    <h3>ساعات العمل</h3>
+                    <p>24 ساعة يومياً<br><strong>الجمعة:</strong> مغلق</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <iframe style="border:0; width: 100%; height: 300px; border-radius: 12px;" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62053.15674135689!2d44.05373344604723!3d13.577110433899545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161c6ed0f006e319%3A0x9067957ae8d674c8!2z2YXYrtiq2KjYsdin2Kog2KfZhNiq2LbYp9mF2YYg2KfZhNiv2YjZhNmK2Kk!5e0!3m2!1sar!2s!4v1704976023655!5m2!1sar!2s" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4 class="z">العنوان</h4>
+            <p class="z">شارع جمال<br>مع تقاطع شارع التحرير<br >تعز، اليمن</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4 class="z">التواصل</h4>
+            <p class="z">
+              <strong class="z">الجوال:</strong > +967 4 123456<br>
+              <strong class="z">البريد الإلكتروني:</strong > info@tadamun-labs.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4 class="z">ساعات العمل</h4>
+            <p class="z">24 ساعة يومياً<br><strong>الجمعة:</strong> مغلق</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 class="z">تابعنا على</h4>
+          <div class="social-links d-flex z">
+            <a href="#" class="twitter"><i class="bi bi-twitter z"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook z"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram z"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin z"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; جميع الحقوق محفوظة <strong><span>مختبرات التضامن الدولية</span></strong>
+      </div>
+      <div class="credits">
+        تصميم وتطوير <a href="#">فريق التطوير</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Enhanced Main JS File -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+
+    // Initialize PureCounter
+    new PureCounter();
+
+    // Loading overlay
+    window.addEventListener('load', function() {
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      loadingOverlay.style.opacity = '0';
+      setTimeout(() => {
+        loadingOverlay.style.display = 'none';
+      }, 500);
+    });
+
+    // Scroll progress bar
+    window.addEventListener('scroll', function() {
+      const scrollProgress = document.getElementById('scrollProgress');
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + '%';
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('sticked');
+      } else {
+        header.classList.remove('sticked');
+      }
+    });
+
+    // Mobile navigation
+    const mobileNavShow = document.querySelector('.mobile-nav-show');
+    const mobileNavHide = document.querySelector('.mobile-nav-hide');
+    const navbar = document.querySelector('.navbar');
+
+    if (mobileNavShow) {
+      mobileNavShow.addEventListener('click', function() {
+        document.body.classList.add('mobile-nav-active');
+      });
+    }
+
+    if (mobileNavHide) {
+      mobileNavHide.addEventListener('click', function() {
+        document.body.classList.remove('mobile-nav-active');
+      });
+    }
+
+    // Close mobile nav when clicking on a link
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.body.classList.remove('mobile-nav-active');
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile nav if open
+          document.body.classList.remove('mobile-nav-active');
+        }
+      });
+    });
+
+    // Active navigation highlighting
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Scroll to top button
+    const scrollTop = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        scrollTop.classList.add('active');
+      } else {
+        scrollTop.classList.remove('active');
+      }
+    });
+
+    scrollTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Enhanced Read More Functionality
+    function toggleReadMore(button) {
+      const newsCard = button.closest('.news-card-content');
+      const excerpt = newsCard.querySelector('.news-excerpt');
+      const fullContent = newsCard.querySelector('.news-full-content');
+      
+      if (fullContent.style.display === 'none' || fullContent.style.display === '') {
+        // Show full content
+        excerpt.style.display = 'none';
+        fullContent.style.display = 'block';
+        fullContent.classList.remove('hiding');
+        button.textContent = 'قراءة أقل';
+        button.classList.add('expanded');
+        
+        // Smooth scroll to keep the card in view
+        setTimeout(() => {
+          newsCard.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest' 
+          });
+        }, 100);
+      } else {
+        // Hide full content
+        fullContent.classList.add('hiding');
+        
+        setTimeout(() => {
+          fullContent.style.display = 'none';
+          fullContent.classList.remove('hiding');
+          excerpt.style.display = 'block';
+          button.textContent = 'قراءة المزيد';
+          button.classList.remove('expanded');
+        }, 300);
+      }
+    }
+  </script>
+</body>
+
+</html>
+
